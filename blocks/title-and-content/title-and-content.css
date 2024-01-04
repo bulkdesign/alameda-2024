@@ -1,0 +1,3 @@
+.title-and-content {
+    margin: calc(var(--block-margin) / 3) auto;
+}
