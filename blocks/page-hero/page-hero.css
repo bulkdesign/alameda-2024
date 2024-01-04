@@ -1,0 +1,13 @@
+.section-background:has(.page-hero.full-height) {
+    padding-top: 0;
+}
+
+.page-hero:is(.full-height) {
+    padding: 0;
+    width: 100%;
+    height: 50vh;
+}
+
+.page-hero:is(.full-height) img {
+    object-fit: contain;
+}
