@@ -27,3 +27,35 @@ function child_theme_enqueue_scripts() {
 	
 }
 add_action( 'wp_enqueue_scripts', 'child_theme_enqueue_scripts' );
+
+/**
+ * Filter allowed blocks
+ */
+function child_theme_allowed_blocks() {
+	return array(
+        'content-in-columns',
+        'content-with-media',
+        'cookies-disclaimer',
+        'faq-accordion',
+        'footer-one',
+        'footer-two',
+        'header',
+        'header-simple',
+        'logos-carousel',
+        'logos-grid',
+        'page-hero',
+        'page-hero-carousel',
+        'posts-archive-with-filter',
+        'section-background',
+        'single-post-content',
+        'template-content',
+        'testimonials',
+        'title-and-content'
+    );
+}
+add_filter( 'theme_allowed_blocks', 'child_theme_allowed_blocks', 10, 0);
+
+// Development mode - delete before completing the project
+function bulk_is_developing(){
+    return true;
+}
