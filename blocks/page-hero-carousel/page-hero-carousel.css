@@ -1,0 +1,15 @@
+.page-hero-carousel.alignfull {
+    height: 60rem;
+}
+
+.page-hero-carousel.alignfull .swiper {
+    height: 100%;
+}
+
+.page-hero-carousel-wrapper {
+    width: var(--wide-width);
+}
+
+:is(.page-hero-carousel-navigation-prev, .page-hero-carousel-navigation-next) svg * {
+    stroke: var(--color-white);
+}
