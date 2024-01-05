@@ -1,6 +1,10 @@
-:root{
+:root {
     /* CONFIGURABLE SETTINGS */
         /* COLORS */
+        --color-white: #FFFFFF;
+        --color-light-grey: #ececec;
+        --color-grey: #586768;
+        --color-black: #000000;
 
         /* BACKGROUND */
 
@@ -37,4 +41,12 @@
 
         /* MISCELANEOUS */
 
+}
+
+a {
+    color: var(--color-white);
+}
+
+a:is(:hover, :active, :focus) {
+    color: var(--link-color);
 }
