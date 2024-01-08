@@ -1,3 +1,43 @@
 .header-simple nav a {
     color: var(--color-white);
 }
+
+.header-simple .logo :is(img, svg) {
+    max-width: 15rem;
+}
+
+.header-simple .featured-menu li:last-child a {
+    background: transparent;
+    padding: 1rem;
+    color: currentColor;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.header-simple .featured-menu li:last-child a::after {
+    content: '';
+    display: flex;
+    width: 1rem;
+    height: 1rem;
+    background-color: #ff0000;
+    justify-content: center;
+    border-radius: 100%;
+    margin-left: 0.6rem;
+    transform: scale(1);
+    animation: pulse 0.8s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.8);
+    }
+}
