@@ -41,6 +41,7 @@ function child_theme_allowed_blocks() {
         'footer-two',
         'header',
         'header-simple',
+        'instagram-gallery',
         'logos-carousel',
         'logos-grid',
         'page-hero',
