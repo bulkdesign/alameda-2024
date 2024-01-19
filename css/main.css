@@ -10,8 +10,18 @@
 
         /* TEXT */
             /* PRIMARY FONT */
+            @font-face {
+                font-family: 'Hanson';
+                src: url('../inc/fonts/HansonBold.woff2') format('woff2'),
+                    url('../inc/fonts/HansonBold.woff') format('woff');
+                font-weight: bold;
+                font-style: normal;
+                font-display: swap;
+            }
 
             /* SECONDARY FONT */
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&display=swap');
+
 
             /* FONT SIZES */
 
@@ -41,6 +51,16 @@
 
         /* MISCELANEOUS */
 
+}
+
+:is(h1, h2) {
+    font-family: 'Hanson';
+    text-transform: uppercase;
+    line-height: 0.9;
+}
+
+:is(h3, h4, h5, h6, p, a) {
+    font-family: 'Montserrat', sans-serif;
 }
 
 a {
