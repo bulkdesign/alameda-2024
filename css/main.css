@@ -10,20 +10,53 @@
 
         /* TEXT */
             /* PRIMARY FONT */
-            @font-face {
-                font-family: 'Hanson';
-                src: url('../inc/fonts/HansonBold.woff2') format('woff2'),
-                    url('../inc/fonts/HansonBold.woff') format('woff');
-                font-weight: bold;
-                font-style: normal;
-                font-display: swap;
-            }
+            --primary-font: 'Montserrat', sans-serif;
+            --primary-line-height: 1.5;
+            --primary-letter-spacing: normal;
+            --primary-font-weight: 400;
 
             /* SECONDARY FONT */
-            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&display=swap');
-
+            --secondary-font: 'Hanson';
+            --secondary-line-height: 0.9;
+            --secondary-letter-spacing: 0.01em;
 
             /* FONT SIZES */
+            --font-multiplier: 1.2;
+            /* FONT: +8 */
+            --font-headline-0: var(--secondary-font-weight) calc(var(--base-font-size) * var(--font-multiplier-pow-8)) / var(--secondary-line-height) var(--secondary-font);
+
+            /* FONT: +7 */
+            --font-headline-1: var(--secondary-font-weight) calc(var(--base-font-size) * var(--font-multiplier-pow-7)) / var(--secondary-line-height) var(--secondary-font);
+
+            /* FONT: +6 */
+            --font-headline-2: var(--secondary-font-weight) calc(var(--base-font-size) * var(--font-multiplier-pow-6)) / var(--secondary-line-height) var(--secondary-font);
+
+            /* FONT: +5 */
+            --font-headline-3: var(--secondary-font-weight) calc(var(--base-font-size) * var(--font-multiplier-pow-5)) / var(--secondary-line-height) var(--secondary-font);
+
+            /* FONT: +4 */
+            --font-headline-4: var(--primary-font-weight) calc(var(--base-font-size) * var(--font-multiplier-pow-4)) / var(--primary-line-height) var(--primary-font);
+
+            /* FONT: +3 */
+            --font-headline-5: var(--primary-font-weight) calc(var(--base-font-size) * var(--font-multiplier-pow-3)) / var(--primary-line-height) var(--primary-font);
+
+            /* FONT: +2 */
+            --font-headline-6: var(--primary-font-weight) calc(var(--base-font-size) * var(--font-multiplier-pow-2)) / var(--primary-line-height) var(--primary-font);
+            --font-elevated-1: var(--primary-font-weight) calc(var(--base-font-size) * var(--font-multiplier-pow-2)) / var(--primary-line-height) var(--primary-font);
+
+            /* FONT: +1 */
+            --font-headline-7: var(--primary-font-weight) calc(var(--base-font-size) * var(--font-multiplier-pow-1)) / var(--primary-line-height) var(--primary-font);
+            --font-elevated-2: var(--primary-font-weight) calc(var(--base-font-size) * var(--font-multiplier-pow-1)) / var(--primary-line-height) var(--primary-font);
+
+            /* FONT:  0 */
+            --font-headline-8: var(--primary-font-weight) var(--base-font-size) / var(--primary-line-height) var(--primary-font);
+            --font-body: var(--primary-font-weight) var(--base-font-size) / var(--primary-line-height) var(--primary-font);
+
+            /* FONT: -1 */
+            --font-body-small: var(--primary-font-weight) calc(var(--base-font-size) / var(--font-multiplier-pow-1)) / var(--primary-line-height) var(--primary-font);
+
+            /* FONT: -2 */
+            --font-body-xsmall: var(--primary-font-weight) calc(var(--base-font-size) / var(--font-multiplier-pow-2)) / var(--primary-line-height) var(--primary-font);
 
             /* LIGHT BACKGROUND COLORS */
 
@@ -53,14 +86,23 @@
 
 }
 
-:is(h1, h2) {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&display=swap');
+
+@font-face {
     font-family: 'Hanson';
-    text-transform: uppercase;
-    line-height: 0.9;
+    src: url('../inc/fonts/HansonBold.woff2') format('woff2'),
+        url('../inc/fonts/HansonBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
-:is(h3, h4, h5, h6, p, a) {
-    font-family: 'Montserrat', sans-serif;
+:is(strong) {
+    font-weight: 600;
+}
+
+:is(h1, h2) {
+    text-transform: uppercase;
 }
 
 a {
