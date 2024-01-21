@@ -10,6 +10,10 @@
     width: var(--wide-width);
 }
 
+.page-hero-carousel .eyebrow {
+    margin-bottom: 2rem;
+}
+
 :is(.page-hero-carousel-navigation-prev, .page-hero-carousel-navigation-next) svg * {
     stroke: var(--color-white);
 }
