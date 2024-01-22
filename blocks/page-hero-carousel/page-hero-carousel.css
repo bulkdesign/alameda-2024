@@ -19,5 +19,5 @@
 }
 
 :is(.page-hero-carousel-navigation-prev, .page-hero-carousel-navigation-next):is(:hover, :focus, :active) svg * {
-    stroke: var(--color-grey);
+    stroke: var(--color-orange);
 }
