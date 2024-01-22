@@ -3,7 +3,16 @@
 }
 
 .header-simple .logo :is(img, svg) {
-    max-width: 15rem;
+    max-width: 16rem;
+}
+
+.header-simple nav :is(.current-menu-item, .current-menu-parent) > a {
+    text-decoration: none;
+    color: var(--color-orange-darker);
+}
+
+.header-simple nav a:is(:hover, :active, :focus) {
+    color: var(--color-orange);
 }
 
 .header-simple .featured-menu li:last-child a {
@@ -13,6 +22,11 @@
     border-radius: 5rem;
     display: flex;
     align-items: center;
+}
+
+.header-simple .featured-menu li:last-child a:is(:hover, :active, :focus) {
+    background: var(--color-orange);
+    border-color: var(--color-orange);
 }
 
 .header-simple .featured-menu li:last-child a::after {
