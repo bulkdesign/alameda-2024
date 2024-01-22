@@ -1,0 +1,18 @@
+.content-in-columns .content-in-columns-content-heading h2 {
+    color: var(--color-turquoise);
+}
+
+.content-in-columns-subtitle {
+    font: var(--font-headline-8);
+    letter-spacing: normal;
+}
+
+.content-in-columns-details-image img {
+    border-radius: 1.6rem;
+}
+
+@media (min-width: 992px) {
+    .content-in-columns-content[data-layout="2"] {
+        column-gap: calc(var(--item-column-gap) * 2);
+    }
+}
