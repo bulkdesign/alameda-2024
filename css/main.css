@@ -5,6 +5,9 @@
         --color-light-grey: #ececec;
         --color-grey: #586768;
         --color-black: #000000;
+        --color-orange: rgb(232, 153, 25);
+        --color-orange-darker: rgb(232, 112, 25);
+        --color-turquoise: #0dc7af;
 
         /* BACKGROUND */
 
@@ -111,4 +114,21 @@ a {
 
 a:is(:hover, :active, :focus) {
     color: var(--link-color);
+}
+
+:is(.primary-button, .wp-block-button:not(.is-style-outline) > .wp-element-button) {
+    background-color: var(--color-orange-darker);
+    border-color: var(--color-orange-darker);
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+:is(.primary-button, .wp-block-button:not(.is-style-outline) > .wp-element-button):is(:hover, :active, :focus) {
+    border-color: var(--color-orange);
+    background-color: var(--color-orange);
+}
+
+:is(.primary-button, .wp-block-button:not(.is-style-outline) > .wp-element-button),
+:is(.secondary-button, .wp-block-button.is-style-outline > .wp-block-button__link.wp-element-button) {
+    border-radius: 1rem;
 }
