@@ -1,0 +1,32 @@
+.footer-two a {
+    text-decoration: none;
+}
+
+.footer-two .footer-two-main-column h2 {
+    font: var(--font-body);
+    text-transform: none;
+    margin-bottom: var(--page-padding);
+    font-weight: bold;
+}
+
+.footer-two ul.social-media {
+    display: flex;
+}
+
+.footer-two ul.social-media svg,
+.footer-two ul.social-media svg path {
+    fill: var(--color-white);
+}
+
+.footer-two ul.social-media a:is(:hover, :active, :focus) svg,
+.footer-two ul.social-media a:is(:hover, :active, :focus) svg path {
+    fill: var(--color-orange);
+}
+
+@media (min-width: 1200px) {
+    .footer-two .footer-two-main-column[data-column-type="contact"] {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+}
