@@ -1,0 +1,8 @@
+.instagram-gallery .instagram-gallery-title h2 {
+    color: var(--color-turquoise);
+}
+
+.instagram-gallery a:is(:active, :hover, :focus) svg,
+.instagram-gallery a:is(:active, :hover, :focus) svg path {
+    fill: var(--color-turquoise);
+}
