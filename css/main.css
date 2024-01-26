@@ -132,3 +132,25 @@ a:is(:hover, :active, :focus) {
 :is(.secondary-button, .wp-block-button.is-style-outline > .wp-block-button__link.wp-element-button) {
     border-radius: 1rem;
 }
+
+h1 {
+    font: var(--font-headline-3);
+}
+
+h2 {
+    font-size: calc(var(--base-font-size) * 2);
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font: var(--font-headline-1);
+    }
+
+    h2 {
+        font: var(--font-headline-2);
+    }
+
+    h3 {
+        font: var(--font-headline-3);
+    }
+}
