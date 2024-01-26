@@ -2,10 +2,16 @@
     color: var(--color-turquoise);
 }
 
-.title-and-content .image:is(.left) img {
-    border-radius: 0rem 1.6rem 1.6rem 0rem;
+.title-and-content .image:is(.left, .right) img {
+    border-radius: 1.6rem;
 }
 
-.title-and-content .image:is(.right) img {
-    border-radius: 1.6rem 0rem 0 1.6rem;
+@media (min-width: 768px) {
+    .title-and-content .image:is(.left) img {
+        border-radius: 0rem 1.6rem 1.6rem 0rem;
+    }
+
+    .title-and-content .image:is(.right) img {
+        border-radius: 1.6rem 0rem 0 1.6rem;
+    }
 }
