@@ -2,10 +2,6 @@
     color: var(--color-white);
 }
 
-.header-simple .logo :is(img, svg) {
-    max-width: 16rem;
-}
-
 .header-simple nav :is(.current-menu-item, .current-menu-parent) > a {
     text-decoration: none;
     color: var(--color-orange-darker);
@@ -53,5 +49,11 @@
 
     100% {
         transform: scale(0.5);
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-simple .logo :is(img, svg) {
+        max-width: 16rem;
     }
 }
