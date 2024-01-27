@@ -14,10 +14,20 @@
     margin-bottom: 2rem;
 }
 
+.page-hero-carousel h1 {
+    font-size: calc(var(--base-font-size) * 2);
+}
+
 :is(.page-hero-carousel-navigation-prev, .page-hero-carousel-navigation-next) svg * {
     stroke: var(--color-white);
 }
 
 :is(.page-hero-carousel-navigation-prev, .page-hero-carousel-navigation-next):is(:hover, :focus, :active) svg * {
     stroke: var(--color-orange);
+}
+
+@media (min-width: 768px) {
+    .page-hero-carousel h1 {
+        font: var(--font-headline-1);
+    }
 }
