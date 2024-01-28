@@ -134,7 +134,7 @@ a:is(:hover, :active, :focus) {
 }
 
 h1 {
-    font: var(--font-headline-3);
+    font-size: calc(var(--base-font-size) * 2);
 }
 
 h2 {
